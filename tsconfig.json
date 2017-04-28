@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "sourceMap": true,
+        "typeRoots": ["./node_modules/@types"],
+        "allowJs": true,
+        "checkJs": true,
+        "noEmit": true
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}

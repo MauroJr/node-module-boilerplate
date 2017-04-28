@@ -1,0 +1,46 @@
+{
+  "name": "mongo-emitter",
+  "version": "1.0.0",
+  "description": "Event Emitter to subscribing for changes in a MongoDB ReplicaSet",
+  "main": "./src/index.js",
+  "repository": "git@github.com:fun-js/mongo-emitter.git",
+  "author": "Mauro Junior <mauropereirajr@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@funjs/emitter": "^1.1.0",
+    "mongodb": "^2.2.26"
+  },
+  "scripts": {
+    "start": "npm run test",
+    "commit": "git add -A && git-cz && git push",
+    "pretest": "npm run build",
+    "test": "npm run lint && nyc --check-coverage mocha ./test/*.js",
+    "test:watch": "mocha ./test/*.js --watch",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:watch": "esw -w --ignore-path .gitignore .",
+    "coverage": "nyc report --reporter=text-lcov | codecov",
+    "coverage:summary": "nyc report",
+    "prebuild": "rimraf lib",
+    "build": "babel src --out-dir lib",
+    "setup": "npm install && npm test",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.14",
+    "babel-cli": "^6.24.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.4.0",
+    "chai": "^3.5.0",
+    "codecov": "^2.1.0",
+    "commitizen": "^2.9.6",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0",
+    "ghooks": "^2.0.0",
+    "mocha": "^3.3.0",
+    "nyc": "^10.2.0",
+    "rimraf": "^2.6.1",
+    "semantic-release": "^6.3.2",
+    "typescript": "^2.3.1"
+  }
+}
