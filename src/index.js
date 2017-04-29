@@ -1,3 +1,3 @@
-export default function hello(vai) {
-  console.log('Hello World.');
+export default function hello() {
+  return 'Hello World.';
 }
