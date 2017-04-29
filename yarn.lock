@@ -2431,7 +2431,7 @@ md5-o-matic@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/md5-o-matic/-/md5-o-matic-0.1.1.tgz#822bccd65e117c514fab176b25945d54100a03c3"
 
-meow@^3.3.0:
+meow@^3.3.0, meow@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/meow/-/meow-3.7.0.tgz#72cb668b425228290abbfa856892587308a801fb"
   dependencies:
@@ -2638,6 +2638,14 @@ npm-run-path@^1.0.0:
   resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-1.0.0.tgz#f5c32bf595fe81ae927daec52e82f8b000ac3c8f"
   dependencies:
     path-key "^1.0.0"
+
+npm-scripts-info@^0.3.6:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/npm-scripts-info/-/npm-scripts-info-0.3.6.tgz#14e7c78c1288bd6d82078769c7aa9583fc413c03"
+  dependencies:
+    chalk "^1.1.1"
+    meow "^3.7.0"
+    unquote "^1.1.0"
 
 npmconf@^2.1.2:
   version "2.1.2"
@@ -3669,6 +3677,10 @@ uid-number@^0.0.6:
 underscore.string@~2.2.0rc:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/underscore.string/-/underscore.string-2.2.1.tgz#d7c0fa2af5d5a1a67f4253daee98132e733f0f19"
+
+unquote@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/unquote/-/unquote-1.1.0.tgz#98e1fc608b6b854c75afb1b95afc099ba69d942f"
 
 urlgrey@0.4.4:
   version "0.4.4"

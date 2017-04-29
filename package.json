@@ -8,6 +8,9 @@
   "license": "MIT",
   "dependencies": {},
   "scripts": {
+    "?info": "Display information about the scripts.",
+    "info": "npm-scripts-info",
+
     "start": "npm run test",
     "commit": "git add -A && git-cz && git push",
     "pretest": "npm run build",
@@ -37,6 +40,7 @@
     "eslint-plugin-import": "^2.2.0",
     "ghooks": "^2.0.0",
     "mocha": "^3.3.0",
+    "npm-scripts-info": "^0.3.6",
     "nyc": "^10.2.0",
     "rimraf": "^2.6.1",
     "semantic-release": "^6.3.2",
