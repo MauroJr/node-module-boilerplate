@@ -2,7 +2,7 @@
   "name": "node-seed",
   "version": "0.0.0-development",
   "description": "My template for node modules with lint, tests, code coverage, type checking, CI, semantic release and interoperability between ES6 modules and CommonJs.",
-  "main": "./src/index.js",
+  "main": "./lib/index.js",
   "repository": "git@github.com:MauroJr/node-seed.git",
   "author": "Mauro Junior <mauropereirajr@gmail.com>",
   "license": "MIT",
