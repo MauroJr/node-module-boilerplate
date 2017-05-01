@@ -8,7 +8,14 @@
   "license": "MIT",
   "dependencies": {},
   "keywords": [
-    "node", "seed", "boilerplate", "CI", "tests", "list", "coverage", "ES6"
+    "node",
+    "seed",
+    "boilerplate",
+    "CI",
+    "tests",
+    "list",
+    "coverage",
+    "ES6"
   ],
   "scripts": {
     "?info": "Display information about the scripts.",
@@ -54,10 +61,10 @@
     "ghooks": "^2.0.0",
     "mocha": "^3.3.0",
     "npm-scripts-info": "^0.3.6",
-    "nyc": "^10.2.0",
+    "nyc": "^10.3.0",
     "rimraf": "^2.6.1",
     "semantic-release": "^6.3.2",
-    "typescript": "^2.3.1"
+    "typescript": "^2.3.2"
   },
   "config": {
     "ghooks": {
