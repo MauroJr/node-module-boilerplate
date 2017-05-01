@@ -1,5 +1,5 @@
 {
-  "name": "node-seed",
+  "name": "node-module-boilerplate",
   "version": "0.0.0-development",
   "description": "My template for node modules with lint, tests, code coverage, type checking, CI, semantic release and interoperability between ES6 modules and CommonJs.",
   "main": "./lib/index.js",
@@ -10,7 +10,6 @@
   "scripts": {
     "?info": "Display information about the scripts.",
     "info": "npm-scripts-info",
-
     "start": "npm run test",
     "commit": "git add -A && git-cz && git push",
     "pretest": "npm run build",
