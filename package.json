@@ -7,6 +7,9 @@
   "author": "Mauro Junior <mauropereirajr@gmail.com>",
   "license": "MIT",
   "dependencies": {},
+  "keywords": [
+    "node", "seed", "boilerplate", "CI", "tests", "list", "coverage", "ES6"
+  ],
   "scripts": {
     "?info": "Display information about the scripts.",
     "info": "npm-scripts-info",
