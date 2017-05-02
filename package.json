@@ -22,6 +22,7 @@
     "info": "npm-scripts-info",
     "?start": "Startup the module.",
     "start": "npm run test",
+    "precommit": "npm run test",
     "?commit": "Run a wizard to do a `git commit` following commitizen rules.",
     "commit": "git add -A && git-cz && git push",
     "pretest": "npm run build",
@@ -58,7 +59,7 @@
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.1.3",
     "eslint-plugin-import": "^2.2.0",
-    "ghooks": "^2.0.0",
+    "husky": "^0.13.3",
     "mocha": "^3.3.0",
     "npm-scripts-info": "^0.3.6",
     "nyc": "^10.3.0",
@@ -67,9 +68,6 @@
     "typescript": "^2.3.2"
   },
   "config": {
-    "ghooks": {
-      "pre-commit": "npm run test"
-    },
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
