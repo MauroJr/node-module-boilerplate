@@ -46,7 +46,7 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "devDependencies": {
-    "@types/node": "^7.0.14",
+    "@types/node": "^7.0.15",
     "babel-cli": "^6.24.1",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.4.0",
