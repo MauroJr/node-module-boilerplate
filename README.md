@@ -14,7 +14,7 @@ A modern template for node modules with lint (ESlint), tests (Mocha and Chai), c
 
 * clone the repo and remove the .git folder
 ```Shell
-$ git clone git@github.com:semantic-release/semantic-release.git my-new-module-name
+$ git clone git@github.com:MauroJr/node-module-boilerplate.git my-new-module-name
 $ cd my-new-module-name
 $ rm -rf .git
 ```
@@ -44,5 +44,5 @@ $ yarn run commit
 ## Do you want more information?
 
 ```Shell
-$ yarn run info
+$ yarn run infoMy template for node modules with lint, tests, code coverage, type checking, CI, semantic release and interoperability between ES6 modules and CommonJs.
 ```
