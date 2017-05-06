@@ -23,6 +23,8 @@
     "info": "npm-scripts-info",
     "?start": "Startup the module.",
     "start": "npm run test",
+    "?debug": "Start a debugger for the `main` entry point.",
+    "debug": "babel-node --inspect --debug-brk ./src/index.js",
     "precommit": "if-env IGNORE_GHOOKS=true || npm run test",
     "?commit": "Run a wizard to do a `git commit` following commitizen rules.",
     "commit": "git add -A && git-cz && git push origin HEAD",
