@@ -72,9 +72,9 @@
     "if-env": "^1.0.0",
     "mocha": "^3.3.0",
     "npm-scripts-info": "^0.3.6",
-    "nyc": "^10.3.0",
+    "nyc": "^10.3.2",
     "rimraf": "^2.6.1",
-    "semantic-release": "^6.3.2",
+    "semantic-release": "^6.3.6",
     "typescript": "^2.3.2"
   },
   "config": {
