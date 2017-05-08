@@ -22,7 +22,7 @@
     "?info": "Display information about the scripts.",
     "info": "npm-scripts-info",
     "?start": "Startup the module.",
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm start:dev",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "?start:prod": "Startup the module with a `production` environment.",
     "start:prod": "NODE_ENV=production node ./lib/index.js",
     "?start:dev": "Startup the module with a `development` environment.",
