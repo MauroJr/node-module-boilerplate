@@ -1,9 +1,18 @@
 {
   "presets": [
     ["env", {
-      "targets": { "node": 6.9 },
+      "targets": { "node": 8 },
       "modules": "commonjs"
     }]
   ],
-  "plugins": ["add-module-exports"]
+  "plugins": [
+    "add-module-exports",
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "@utils": "./src/utils",
+        "@libs": "./src/libs"
+      }
+    }]
+  ]
 }
