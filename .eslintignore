@@ -1,8 +1,5 @@
 # /node_modules/* and /bower_components/* ignored by default
 
-# Ignore built files
-lib/*
-
 # Ignore coverage files
-coverage/*
+.coverage/*
 .nyc_output/*

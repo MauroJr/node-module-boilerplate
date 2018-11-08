@@ -1,3 +1,5 @@
-export default function hello() {
-  return 'Hello World.';
-}
+'use strict';
+
+exports.hello = function hello() {
+  return process.env.HELLO;
+};
