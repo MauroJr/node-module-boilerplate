@@ -5,10 +5,9 @@ cache:
 notifications:
   email: false
 node_js:
+  - "11"
   - "10"
-  - "9"
   - "8"
-  - "6"
 script:
   - npm run test
 after_success:
