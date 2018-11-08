@@ -31,7 +31,7 @@
     "debug": "node --inspect --debug-brk -r dotenv/config ./src/index.js",
     "?debug:tests": "Start a debugger for the tests",
     "debug:tests": "mocha --inspect --debug-brk -r dotenv/config ./test/*.js",
-    "precommit": "if-env IGNORE_GHOOKS=true || npm run test",
+    "pre-commit": "if-env IGNORE_GHOOKS=true || npm run test",
     "?commit": "Run a wizard to do a `git commit` and `git push` following commitizen rules.",
     "commit": "git-cz && git push origin HEAD",
     "?commit:retry": "Retry the last `failed` commit",
