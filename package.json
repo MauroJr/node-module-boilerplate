@@ -107,7 +107,9 @@
     "report-dir": "./.coverage"
   },
   "husky": {
-    "pre-commit": "if-env IGNORE_GHOOKS=true || npm run test"
+    "hooks": {
+      "pre-commit": "if-env IGNORE_GHOOKS=true || npm test"
+    }
   },
   "config": {
     "commitizen": {
