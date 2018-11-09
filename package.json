@@ -68,7 +68,8 @@
     "commitizen": "^3.0.4",
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "^2.1.0",
-    "cz-emoji": "^1.1.2",
+    "cz-customizable": "^5.2.0",
+    "cz-customizable-ghooks": "^1.5.0",
     "dotenv": "^6.1.0",
     "eslint": "^5.8.0",
     "eslint-config-airbnb-base": "^13.1.0",
@@ -113,12 +114,16 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "if-env IGNORE_GHOOKS=true || npm test"
+      "pre-commit": "if-env IGNORE_GHOOKS=true || npm test",
+      "commit-msg": "cz-customizable-ghooks"
     }
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-emoji"
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.js"
     }
   }
 }
