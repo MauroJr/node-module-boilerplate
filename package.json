@@ -68,6 +68,7 @@
     "commitizen": "^3.0.4",
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "^2.1.0",
+    "cz-emoji": "^1.1.2",
     "dotenv": "^6.1.0",
     "eslint": "^5.8.0",
     "eslint-config-airbnb-base": "^13.1.0",
@@ -117,7 +118,67 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-emoji"
+    },
+    "cz-emoji": {
+      "types": [
+        {
+          "emoji": "🌟",
+          "name": "feat:",
+          "description": "A new feature",
+          "code": ":star2:"
+        },
+        {
+          "emoji": "🐞",
+          "code": ":beetle:",
+          "name": "fix:",
+          "description": "A bug fix"
+        },
+        {
+          "name": "test \t\t🚓  Testing improved with new or fixed tests",
+          "value": ":police_car:"
+        },
+        {
+          "name": "chore \t🔩  Doesn't modify src or test files",
+          "value": ":nut_and_bolt:"
+        },
+        {
+          "name": "style \t✏️  Doesn't affect the meaning of the code (white-space, semi-colons, etc)",
+          "value": ":pencil2:"
+        },
+        {
+          "name": "docs \t\t📚  Documentation change",
+          "value": ":books:"
+        },
+        {
+          "name": "refactor \t🎨  Neither fixes a bug nor adds a feature",
+          "value": ":art:"
+        },
+        {
+          "name": "perf \t\t💰  Improves performance with this change",
+          "value": ":moneybag:"
+        },
+        {
+          "name": "build \t🚀  Build system config or external dependencies ($compile)",
+          "value": ":rocket:"
+        },
+        {
+          "name": "ci \t\t🚥  CI config files and scripts ($arch)",
+          "value": ":traffic_light:"
+        },
+        {
+          "name": "revert \t💊  Reverts a previous commit",
+          "value": ":pill:"
+        }
+      ],
+      "scopes": [
+        "$arch",
+        "$compile",
+        "$contrib",
+        "$core",
+        "$data",
+        "$ui"
+      ]
     }
   }
 }
