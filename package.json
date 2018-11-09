@@ -6,6 +6,10 @@
   "repository": "git@github.com:MauroJr/node-module-boilerplate.git",
   "author": "Mauro Junior <mauropereirajr@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=8.3.0",
+    "npm": ">=5.2.0"
+  },
   "dependencies": {},
   "keywords": [
     "modern",
