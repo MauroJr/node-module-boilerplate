@@ -38,7 +38,7 @@
     "?commit": "Run a wizard to do a `git commit` and `git push` following commitizen rules.",
     "commit": "git-cz && git push origin HEAD",
     "?commit:retry": "Retry the last `failed` commit",
-    "commit:retry": "npm run commit -- --retry",
+    "commit:retry": "git-cz --retry && git push origin HEAD",
     "?commit:all": "Add all changes to stage and run `npm run commit`",
     "commit:all": "git add -A && npm run commit",
     "?test": "Run all tests.",
@@ -64,12 +64,13 @@
     "travis-deploy-once": "travis-deploy-once"
   },
   "devDependencies": {
+    "@commitlint/cli": "^7.2.1",
+    "@commitlint/config-conventional": "^7.1.2",
     "chai": "^4.2.0",
     "commitizen": "^3.0.4",
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "^2.1.0",
     "cz-customizable": "^5.2.0",
-    "cz-customizable-ghooks": "^1.5.0",
     "dotenv": "^6.1.0",
     "eslint": "^5.8.0",
     "eslint-config-airbnb-base": "^13.1.0",
@@ -115,7 +116,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "if-env IGNORE_GHOOKS=true || npm test",
-      "commit-msg": "cz-customizable-ghooks"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "config": {
