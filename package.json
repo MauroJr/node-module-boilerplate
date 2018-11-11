@@ -10,7 +10,9 @@
     "node": ">=8.3.0",
     "npm": ">=5.2.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "config": "^2.0.1"
+  },
   "keywords": [
     "modern",
     "node",
@@ -30,7 +32,7 @@
     "?start:prod": "Startup the module with a `production` environment.",
     "start:prod": "NODE_ENV=production node -r dotenv/config ./lib/index.js",
     "?start:dev": "Startup the module with a `development` environment.",
-    "start:dev": "node node -r dotenv/config ./src/index.js",
+    "start:dev": "NODE_ENV=development node -r dotenv/config ./src/index.js",
     "?debug": "Start a debugger for the `main` entry point.",
     "debug": "node --inspect --debug-brk -r dotenv/config ./src/index.js",
     "?debug:tests": "Start a debugger for the tests",
